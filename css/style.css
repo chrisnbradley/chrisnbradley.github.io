@@ -1,0 +1,289 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	line-height: 1.6;
+	color: #333;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	display: block;
+	width: 154px;
+	/* max-width: 320px; */
+	margin: auto;
+}
+
+.logoFooter {
+	width: 176px;
+}
+
+.copyright,
+.social {
+	margin-left: 50px;
+	color: #fff;
+}
+
+.copyright {
+	display: block;
+	font-size: .85em;
+}
+
+.social {
+	padding-top: 10px;
+}
+
+.ionicon {
+	color: #fff;
+	font-size: 32px;
+}
+
+.orderboxIcon {
+	color: #f24949;
+	font-size: 64px;
+}
+
+.orderbox {
+    text-align: center;
+    padding: 10%;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+		margin-bottom: 15px;
+}
+
+.orderbox:hover {
+		background-color: #eee;
+		cursor: pointer;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* The Modal (background) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 50%;
+    top: 50%;
+		transform: translate(-50%, -50%);
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modalContent {
+		position: fixed;
+		width: 50%;
+		height: 60%;
+    background-color: #fefefe;
+		color: #000;
+		left: 50%;
+    top: 50%;
+		transform: translate(-50%, -50%);
+    padding: 1px;
+    border: 2px solid #888;
+}
+
+.modalContent p {
+		position: fixed;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 1.2em;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+		margin-right: 5%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.noScroll {
+	overflow: hidden;
+}
+
+/* ---- Navigation ---- */
+
+
+#btnCollapse {
+		border: 1px solid #fff;
+		padding: 0px 5px;
+		border-radius: 5px;
+}
+
+#btnCollapse:hover {
+		cursor: pointer;
+}
+
+.logoHeader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav {
+	display: none;
+}
+
+.main-nav li {
+	text-align: center;
+	background: #2b2d39;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+	font-size: 1.1em;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #f24949;
+}
+
+/* ---- Layout Containers ---- */
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	padding-top: 12.595px;
+	padding-bottom: 12.595px;
+	background: #2b2d39;
+	margin-bottom: 30px;
+}
+
+.main-footer {
+	text-align: left;
+	padding: 2em 0;
+	background: #2b2d39;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 1150px) {
+
+	.main-nav {
+		display: flex;
+		font-size: 12px;
+		margin-left: 0px;
+	}
+
+	.logo {
+		width: 155px;
+	}
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 85%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+	.orderboxContainer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.orderbox {
+		flex-grow: 1;
+		width: 25%;
+		max-width: 400px;
+		padding: 5%;
+	}
+
+	#uploadBox {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	#btnCollapse {
+		display: none;
+	}
+
+	.main-header .container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		/* padding-top: 75px; */
+		/* padding-bottom: 0; */
+		/* background: #2b2d39; */
+	}
+
+	.main-header {
+		margin-bottom: 0;
+	}
+
+	.main-nav li {
+		text-align: center;
+		background: #2b2d39;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	.main-nav a {
+		padding: 6px 20px;
+	}
+
+	.navBtn {
+			background: #f24949;
+			margin-left: 10px;
+	    border: 1px solid #f24949;
+	    border-radius: 3px;
+	}
+
+	.navBtn:hover {
+			background: #2b2d39;
+			color: #f24949;
+	}
+
+}

@@ -7,5 +7,7 @@ Portal allows customer to:
   b. File Upload
 2. Establish Ship Date for Bin & Hold
 3. Submit Rework Details
+
+Part 2 (Optional)
 4. View Order History
 5. View Open Bins

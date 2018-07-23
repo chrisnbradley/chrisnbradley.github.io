@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HokuBook - Customer Portal</title>
+	<link rel="shortcut icon" href="http://www.hokubook.com/img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+
+		<header class="main-header">
+			<div class="container">
+				<div class="logoHeader">
+					<a href="#"><img class="logo" src="img/hokubook.png" alt="HokuBook Logo"></a>
+					<div class="menuBtn">
+					<ion-icon id="btnCollapse" class="ionicon" name="menu"></ion-icon>
+					</div>
+				</div>
+					<ul class="main-nav">
+						<li><a class="navBtn" href="#">Order Books</a></li>
+						<li><a class="navBtn" href="#">Order History</a></li>
+						<li><a class="navBtn" href="#">Want List</a></li>
+						<li><a class="navBtn" href="#">Sell Books</a></li>
+						<li><a class="navBtn" href="#">Sales History</a></li>
+					</ul>
+			</div><!--.container-->
+		</header>
+
+		<div class="container">
+			<div class="title">
+				<h1>Order Books</h1>
+				<p>You can order books by copying and pasting your Want List, uploading your Want List file, or searching for individual titles. </p>
+			</div><!--/.title-->
+
+			<div class="orderboxContainer">
+				<!--Copy & Paste Box-->
+				<div id="copyPasteBox" class="orderbox">
+					<ion-icon class="orderboxIcon" name="copy"></ion-icon>
+					<h2>Copy & Paste</h2>
+					<p>Copy and paste your want list</p>
+				</div><!--/.orderbox-->
+
+				<!--Modal -->
+				<div id="modalCopyPaste" class="modal">
+						<!-- Modal content -->
+						<div class="modalContent">
+							<span class="close">&times;</span>
+						  <p>Copy & Paste Content Coming Soon...</p>
+						</div>
+				</div><!--Modal-->
+
+				<!--Upload Want List Box-->
+				<div id="uploadBox" class="orderbox">
+					<ion-icon class="orderboxIcon" name="cloud-upload"></ion-icon>
+					<h2>Upload Want List</h2>
+					<p>Upload a csv, txt, or xlsx file</p>
+				</div><!--/.orderbox-->
+
+				<!--Search Books Box-->
+				<div id="searchBox" class="orderbox">
+					<ion-icon class="orderboxIcon" name="search"></ion-icon>
+					<h2>Search</h2>
+					<p>Search for books by Author, Title or ISBN</p>
+				</div><!--/.orderbox-->
+			</div><!--/.orderboxContainer-->
+
+		</div><!--/.container-->
+
+	</div><!--/.wrap-->
+
+	<footer class="main-footer">
+		<div class="container">
+			<img class="logoFooter" src="img/hokubook-white.png" alt="HokuBook Logo">
+	 		<span class="copyright">&copy;2018 HokuBook, LLC</span>
+			<div class="social">
+				<a target="_blank" href="https://www.facebook.com/HokuForBiz/"><ion-icon class="ionicon" name="logo-facebook"></ion-icon></a>
+				<a target="_blank" href="https://twitter.com/hokuforbiz"><ion-icon class="ionicon" name="logo-twitter"></a>
+				<a target="_blank" href="https://www.instagram.com/hokuforbiz/"><ion-icon class="ionicon" name="logo-instagram"></a>
+				<a target="_blank" href="https://www.youtube.com/channel/UCodfpNOJI4OKCV-Oj-XHv2Q"><ion-icon class="ionicon" name="logo-youtube"></span></a>
+				<a target="_blank" href="https://www.linkedin.com/company/hokubook-for-business"><ion-icon class="ionicon" name="logo-linkedin"></a>
+			</div><!--/.social-->
+		</div><!--/.container-->
+	</footer>
+	<!-- Add script link prior to closing body tag
+	<script src="js/functions.js"></script>
+	-->
+	<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
