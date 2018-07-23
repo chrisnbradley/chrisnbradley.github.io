@@ -171,7 +171,7 @@ a {
 .main-nav a {
 	padding: 10px 15px;
 	text-align: center;
-	display: block;
+	/* display: block; */
 	font-size: 1.1em;
 	color: #fff;
 	text-transform: uppercase;
@@ -207,8 +207,11 @@ a {
 
 @media (min-width: 1150px) {
 
+	/*Give importance to display flex for responsive design purporses.
+	Jquery fadeToggle writes display none as inline style causing media query to fail
+	*/
 	.main-nav {
-		display: flex;
+		display: flex !important;
 		font-size: 12px;
 		margin-left: 0px;
 	}

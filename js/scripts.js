@@ -31,21 +31,14 @@ window.onclick = function(event) {
     }
 }
 
-// Get the hamburger menu button that opens Navigation
-const navBtn = document.getElementsByClassName('menuBtn')[0];
-
-// Get the navigation menu
-const navMenu = document.getElementsByClassName('main-nav')[0];
-const disNav = navMenu.style.display;
-
 // When user clicks the hamburger button, toggle show/hide navigation menu
-$('.menuBtn').click(function() {
+$('#btnCollapse').click(function() {
   $('.main-nav').fadeToggle(1000, function() {
     // If navigation menu is expanded show, give hamburger button light grey shade
     if ($('#btnCollapse').css('background-color') === 'rgb(168, 168, 168)') {
       $('#btnCollapse').css('background-color', 'rgb(43,45,57)');
     } else {
       $('#btnCollapse').css('background-color', 'rgb(168,168,168)');
-    }
-  }); //jQuery animation to fade show/hide navigation menu
-})
+    } //end else
+  }); // end fadeToggle jQuery animation to fade show/hide navigation menu
+}); //end function
