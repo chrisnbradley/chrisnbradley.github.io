@@ -1,13 +1,8 @@
-This is a customer portal for HokuBook
+This is a customer portal for HokuBook, a textbook distributor for college stores.
 
-Portal allows customer to:
+This site lays out the initial design of the customer portal using a mobile first design.
 
-1. Submit Want List with PO for Bin & Hold
-  a. Copy & Paste (ISBN, Qty)
-  b. File Upload
-2. Establish Ship Date for Bin & Hold
-3. Submit Rework Details
+For the sake of adding Javascript, a custom modal was developed to show ability to use Javascript.
+This modal can be seen by clicking Copy and Paste Card.
 
-Part 2 (Optional)
-4. View Order History
-5. View Open Bins
+Utilized a CDN to deliver icons to the site (see social in footer)

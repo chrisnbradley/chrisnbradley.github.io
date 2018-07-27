@@ -10,6 +10,13 @@ body {
 	font-family: 'Montserrat', 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 	line-height: 1.6;
 	color: #333;
+	/* display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 185px); */
+}
+
+.wrap {
+	min-height: calc(100vh - 185px);
 }
 
 p {
@@ -24,6 +31,10 @@ h3 {
 
 a {
 	text-decoration: none;
+}
+
+.main-footer {
+	margin-top: auto;
 }
 
 .logo {
@@ -50,6 +61,7 @@ a {
 
 .social {
 	padding-top: 10px;
+	border:	0;
 }
 
 .ionicon {
@@ -80,6 +92,7 @@ a {
   Base Layout Styles
 ==================================== */
 
+/* Attempt to create modal using Flex with height of 100vh */
 /* The Modal (background) */
 
 .modal {
@@ -220,9 +233,9 @@ a {
 		width: 155px;
 	}
 
-	.wrap {
+	/* .wrap {
 		min-height: calc(100vh - 89px);
-	}
+	} */
 
 	.container {
 		width: 85%;
@@ -251,6 +264,8 @@ a {
 		display: none;
 	}
 
+ /* alternatively can select first item (logo) in flex container and set margin-right to auto to get effect of logo pushed to left edge and buttons pushed to right edge*/
+/* Use Flex-basis to make more responsive */
 	.main-header .container{
 		display: flex;
 		align-items: center;
